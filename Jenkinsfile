@@ -8,7 +8,7 @@ pipeline {
         }
         stage ('docker image build') {
             steps {
-                sh '/usr/bin/docker image build -t salonighorpade/devops .'
+                echo '/usr/bin/docker image build -t salonighorpade/devops .'
             }
         }
         stage ('docker login') {
